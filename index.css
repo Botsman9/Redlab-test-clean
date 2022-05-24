@@ -1,0 +1,180 @@
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 500;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+/* index */
+
+.head {
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.head-nav {
+  display: flex;
+  gap: 30px;
+}
+
+.section-main {
+  height: 800px;
+  margin-bottom: 73px;
+  background-image: url(./images/hero.jpg);
+  background-size: 50% 800px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  position: relative;
+}
+
+.main-hero {
+  max-width: 401px;
+  max-height: 357px;
+
+  position: absolute;
+  top: 221px;
+  right: 164px;
+}
+
+.main-hero__title {
+  font-family: 'TT Travels';
+  font-size: 76px;
+  font-weight: 400px;
+}
+
+.main-hero__btn {
+  width: 195px;
+  height: 195px;
+  border-radius: 50%;
+  background-color: #5a30f0;
+  color: #ffffff;
+  position: absolute;
+  bottom: 20px;
+  right: 43.5%;
+}
+
+.card-menu {
+  width: 1320px;
+  height: 328px;
+  margin: 0 auto;
+  margin-bottom: 149px;
+}
+
+.card-menu__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-menu__item {
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 300px;
+  height: 328px;
+  padding-top: 20px;
+  background-color: #f3f6fb;
+  border-radius: 8px;
+}
+
+.sec-use {
+  width: 1094px;
+  height: 795px;
+  margin: 0 auto;
+  margin-bottom: 142px;
+}
+
+.sec-use__text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sec-anime {
+  width: 1440px;
+  height: 800px;
+}
+
+.sec-anime__bar {
+  width: 375px;
+  background-color: #5a30f0;
+}
