@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   border: 0;
+  font-family: 'TT Travels';
 }
 *,
 *:before,
@@ -53,10 +54,12 @@ a,
 a:visited,
 a:hover {
   text-decoration: none;
+  color: #404040;
 }
 ul,
 li {
   list-style: none;
+  color: #404040;
 }
 img {
   vertical-align: top;
@@ -69,6 +72,7 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: 500;
+  color: #404040;
 }
 
 .visually-hidden {
@@ -84,17 +88,57 @@ h6 {
 /* index */
 
 .head {
+  padding-left: 54px;
   height: 70px;
   display: flex;
-  justify-content: space-around;
+
   align-items: center;
 }
 
-.head-nav {
+.head-check {
   display: flex;
-  gap: 30px;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 21.44px;
+  background-color: #ffffff;
+  width: 131px;
+  height: 37px;
+  border: 1px solid #e2e8f0;
+  border-radius: 48px;
 }
 
+.head-check__btnone {
+  width: 55px;
+  height: 31px;
+  background-color: #5a30f0;
+  color: #ffffff;
+  border-radius: 34px;
+}
+.head-check__btntoo {
+  width: 66px;
+  height: 31px;
+  color: #636c81;
+  background-color: inherit;
+  border-radius: 34px;
+}
+
+.head-nav__list {
+  display: flex;
+  gap: 32px;
+  margin-left: 84px;
+  font-size: 16px;
+  font-weight: 500px;
+}
+.head-contakt {
+  margin-left: 67px;
+}
+.head-contakt__tel {
+  margin-right: 15px;
+}
+.head-contakt__grap {
+  margin-left: 15px;
+  margin-right: 32px;
+}
 .section-main {
   height: 800px;
   margin-bottom: 73px;
@@ -106,8 +150,10 @@ h6 {
 }
 
 .main-hero {
+  text-align: start;
   max-width: 401px;
   max-height: 357px;
+  padding-right: 50px;
 
   position: absolute;
   top: 221px;
@@ -115,8 +161,13 @@ h6 {
 }
 
 .main-hero__title {
-  font-family: 'TT Travels';
   font-size: 76px;
+  font-weight: 400px;
+  margin-bottom: 30px;
+}
+
+.main-hero__pretitle {
+  font-size: 18px;
   font-weight: 400px;
 }
 
@@ -152,9 +203,13 @@ h6 {
 
   width: 300px;
   height: 328px;
-  padding-top: 20px;
+  padding: 20px 35px 0 35px;
   background-color: #f3f6fb;
   border-radius: 8px;
+}
+.card-menu__title {
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .sec-use {
@@ -176,5 +231,6 @@ h6 {
 
 .sec-anime__bar {
   width: 375px;
+  height: 800px;
   background-color: #5a30f0;
 }
