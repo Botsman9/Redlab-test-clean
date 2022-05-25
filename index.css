@@ -174,9 +174,17 @@ h6 {
 .main-hero__btn {
   width: 195px;
   height: 195px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  text-transform: uppercase;
+  padding: 20px;
   border-radius: 50%;
   background-color: #5a30f0;
   color: #ffffff;
+
+  transform: rotate(-15deg);
+
   position: absolute;
   bottom: 20px;
   right: 43.5%;
@@ -195,6 +203,7 @@ h6 {
 }
 
 .card-menu__item {
+  position: relative;
   text-align: center;
   align-items: center;
   display: flex;
@@ -206,10 +215,37 @@ h6 {
   padding: 20px 35px 0 35px;
   background-color: #f3f6fb;
   border-radius: 8px;
+
+  overflow: hidden;
+}
+
+.card-menu__item:hover .card-menu__pretitle {
+  transform: translatex(0);
 }
 .card-menu__title {
   font-size: 24px;
   font-weight: 500;
+}
+
+.card-menu__pretitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: start;
+  background: #5a30f0;
+  color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #3f51b5;
+
+  transform: translatey(100%);
+  transition: transform 500ms ease;
 }
 
 .sec-use {
@@ -217,20 +253,64 @@ h6 {
   height: 795px;
   margin: 0 auto;
   margin-bottom: 142px;
+  border-radius: 8px;
 }
 
 .sec-use__text {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 65px;
+  font-weight: 400px;
 }
 
-.sec-anime {
+.sec-use__title {
+  font-size: 44px;
+  line-height: 120%;
+}
+.sec-use__pretitle {
+  width: 414px;
+  height: 100px;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-right: 5px;
+  line-height: 140%;
+}
+
+.sec-use__img {
+  width: 1094px;
+  height: 630px;
+}
+
+/* section-example */
+.sec-examp {
   width: 1440px;
   height: 800px;
 }
 
-.sec-anime__bar {
+.sec-examp__bar {
   width: 375px;
   height: 800px;
+  padding-top: 35px;
+  padding-left: 53px;
   background-color: #5a30f0;
+}
+
+.sec-examp__title {
+  font-size: 16px;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+.sec-examp__list {
+  width: 279px;
+  height: 278px;
+  padding-top: 200px;
+}
+
+.sec-examp__item > button {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 120%;
+  background-color: inherit;
+  color: #ffffff;
 }
