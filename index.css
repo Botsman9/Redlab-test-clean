@@ -188,6 +188,11 @@ h6 {
   position: absolute;
   bottom: 20px;
   right: 43.5%;
+
+  animation-name: button;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 .card-menu {
@@ -259,7 +264,7 @@ h6 {
 .sec-use__text {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 65px;
+  padding-bottom: 53px;
   font-weight: 400px;
 }
 
@@ -283,8 +288,11 @@ h6 {
 
 /* section-example */
 .sec-examp {
-  width: 1440px;
-  height: 800px;
+  position: relative;
+}
+
+.sec-examp:hover .sec-examp__bar {
+  transform: translatex(0%);
 }
 
 .sec-examp__bar {
@@ -293,6 +301,12 @@ h6 {
   padding-top: 35px;
   padding-left: 53px;
   background-color: #5a30f0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  transform: translatex(-100%);
+  transition: transform 500ms ease;
 }
 
 .sec-examp__title {
@@ -313,4 +327,14 @@ h6 {
   line-height: 120%;
   background-color: inherit;
   color: #ffffff;
+}
+
+/* animations */
+@keyframes button {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
 }
